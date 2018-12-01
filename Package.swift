@@ -14,6 +14,6 @@ let package = Package(
             dependencies: ["Expression"]),
         .testTarget(
             name: "calTests",
-            dependencies: ["cal"]),
+            dependencies: ["cal"])
     ]
 )
