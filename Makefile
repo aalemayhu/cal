@@ -31,3 +31,6 @@ lint-fix:
 
 format:
 	swiftformat .
+
+run_container:
+	docker-compose run ubuntu-swift bash

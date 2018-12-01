@@ -1,0 +1,6 @@
+# From: https://theswiftdev.com/2017/11/30/how-to-run-swift-on-linux/
+ubuntu-swift:
+  image: library/swift
+  volumes:
+    - .:/src/app
+    - ../Expression:/src/Expression
