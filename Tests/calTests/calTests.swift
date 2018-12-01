@@ -1,5 +1,6 @@
 import XCTest
 import class Foundation.Bundle
+@testable import cal
 
 final class calTests: XCTestCase {
     func testExample() throws {
@@ -29,6 +30,14 @@ final class calTests: XCTestCase {
         XCTAssertEqual(output, "Hello, world!\n")
     }
 
+    func testSimpleAddition() throws {
+        let input = "2 + 2"
+        let expected = "4"
+
+        let actual = Expression(input)
+        XCTAssertEqual(expected, actual.evaluate())
+    }
+
     /// Returns path to the built products directory.
     var productsDirectory: URL {
       #if os(macOS)
@@ -43,5 +52,6 @@ final class calTests: XCTestCase {
 
     static var allTests = [
         ("testExample", testExample),
+        ("testSimpleAddition", testSimpleAddition),
     ]
 }
