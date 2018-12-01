@@ -3,7 +3,7 @@ DIST_DIR ?=github_dist
 REPOSITORY ?=scanf/cal
 BUILD_DIR ?=.build
 
-all:
+all: lint format
 	swift build
 
 clean:
@@ -22,3 +22,12 @@ github_release: release
 	git push github master
 	githubrelease release ${REPOSITORY} create ${NEW_VERSION} --publish --name "Awesom-o ${NEW_VERSION}" "${DIST_DIR}/*"
 	git push github --tags
+
+lint:
+	swiftlint
+
+lint-fix:
+	swiftlint autocorrect
+
+format:
+	swiftformat .
