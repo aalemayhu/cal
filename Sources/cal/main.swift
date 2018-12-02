@@ -6,5 +6,5 @@ guard CommandLine.argc > 1 else {
     exit(1)
 }
 
-let e = Expression(value: CommandLine.arguments.dropFirst().joined())
-print(e.evaluate())
+let exp = Expression(value: CommandLine.arguments.dropFirst().joined())
+print(exp.evaluate())
