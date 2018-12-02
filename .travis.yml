@@ -11,4 +11,4 @@ script:
   - swift build
   - swift test
 env:
-  - SWIFT_VERSION=swift-4.2.1-RELEASE
+  - SWIFT_VERSION=4.2.1
