@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "cal",
     dependencies: [
-        .package(path: "../Expression")
+        .package(url: "https://github.com/scanf/Expression", .branch("master"))
     ],
     targets: [
         .target(

@@ -1,7 +1,15 @@
 {
   "object": {
     "pins": [
-
+      {
+        "package": "Expression",
+        "repositoryURL": "https://github.com/scanf/Expression",
+        "state": {
+          "branch": "master",
+          "revision": "618bf6daeec9a8d39d9a2420a9710175dc5090d1",
+          "version": null
+        }
+      }
     ]
   },
   "version": 1
