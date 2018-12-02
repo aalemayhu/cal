@@ -3,4 +3,3 @@ ubuntu-swift:
   image: library/swift
   volumes:
     - .:/src/app
-    - ../Expression:/src/Expression
